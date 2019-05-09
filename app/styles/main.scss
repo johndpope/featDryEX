@@ -19,6 +19,9 @@ sans-serif;
 // 
 .pt_primary #main .primary-content  {
   #exFeat {
+    padding-bottom: 1px;
+    color: #f6ff00;
+    background: black;
     * {
       box-sizing: border-box;
     }
@@ -30,28 +33,105 @@ sans-serif;
     h2 {
       border-bottom: none;
     }
+    .exHero01 {
+      position: relative;
+      width: 100%;
+      text-align: center;
+      h1 {
+        font-size: 90px;
+      }
+      h3 {
+        font-family: $fontFam_hel;
+        font-size: 20px;
+        letter-spacing: 1px;
+        white-space: nowrap;
+      }
+    }
+    .exHroCpy {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
     .exFunctions {
       position: relative;
+      text-align: center;
     }
     .exFunctRow {
       display: flex;
       justify-content: space-around;
       position: absolute;
       bottom: 0;
-      color: #f6ff00;
       h3 {
+        font-size: 20px;
         text-transform: uppercase;
+      }
+      p {
+        font-family: $fontFam_hel;
       }
     }
     .exCollect {
-      .exHeader {
+      margin-bottom: 200px;
+      .exColHeader {
           display: flex;
           justify-content: center;
           align-items: center;
+          margin-bottom: 180px;
       }
       .exHedCpy {
-        width: 30%;
+        width: 39%;
+        margin-left: -60px;
+        padding: 30px 80px 60px;
         background: #f6ff00;
+        h2 {
+          margin-bottom: 20px;
+          font-size: 50px;
+          font-style: italic;
+        }
+        p {
+          font-family: $fontFam_hel;
+          color: black;
+          line-height: 1.4;
+        }
+      }
+      .exDeets {
+        position: relative;
+      }
+      img.exDeetsMain {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 70%;
+      }
+      .exOneDeet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 20%;
+        img.exDeetImg {
+          width: 100%;
+          border-radius: 50%;
+        }
+        p {
+          font-family: $fontFam_hel;
+          color: white;
+        }
+      }
+      .exCtas {
+        display: flex;
+        justify-content: center;
+        margin-top: 80px;
+      }
+      .exOneCta {
+        width: 18%;
+        margin: 0 10px;
+        padding: 15px 20px;
+        font-size: 18px;
+        color: black;
+        text-transform: uppercase;
+        text-align: center;
+        background: #f6ff00;
+        border: 1px solid black;
       }
     }
   }
