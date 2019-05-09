@@ -47,6 +47,11 @@ sans-serif;
         white-space: nowrap;
       }
     }
+    .exHeader {
+      img {
+        width: 100%;
+      }
+    }
     .exHroCpy {
       position: absolute;
       top: 50%;
@@ -95,6 +100,9 @@ sans-serif;
         }
       }
       .exDeets {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         position: relative;
       }
       img.exDeetsMain {
@@ -102,16 +110,43 @@ sans-serif;
         left: 50%;
         transform: translateX(-50%);
         width: 70%;
+        z-index: 1;
+        // display: none;
       }
       .exOneDeet {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        width: 20%;
+        align-items: flex-start;
+        width: 50%;
+        margin: 50px 0;
+        padding-left: 5%;
+        z-index: 2;
+        // border: 1px solid yellow;
+
+        &:nth-child(odd) {
+          align-items: flex-end;
+          padding-left: 0;
+          padding-right: 5%;
+        }
+
+        .exAlignDeet {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 50%;
+          text-align: center;
+          // border: 1px solid blue;
+          &:nth-child(odd) {
+
+          }
+        }
+
         img.exDeetImg {
           width: 100%;
+          border: 3px solid white;
           border-radius: 50%;
         }
+
         p {
           font-family: $fontFam_hel;
           color: white;
