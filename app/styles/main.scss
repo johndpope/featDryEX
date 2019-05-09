@@ -18,7 +18,43 @@ sans-serif;
 // FULL WIDTH SPECIFICITY
 // 
 .pt_primary #main .primary-content  {
-
+  #exFeat {
+    * {
+      box-sizing: border-box;
+    }
+    img {
+      display: block;
+      max-width: none;
+      max-height: none;
+    }
+    h2 {
+      border-bottom: none;
+    }
+    .exFunctions {
+      position: relative;
+    }
+    .exFunctRow {
+      display: flex;
+      justify-content: space-around;
+      position: absolute;
+      bottom: 0;
+      color: #f6ff00;
+      h3 {
+        text-transform: uppercase;
+      }
+    }
+    .exCollect {
+      .exHeader {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      .exHedCpy {
+        width: 30%;
+        background: #f6ff00;
+      }
+    }
+  }
 }
 
 
@@ -28,29 +64,3 @@ sans-serif;
 
 // }
 
-
-
-
-
-
-body {
-  background: #fafafa;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #333;
-}
-
-.hero-unit {
-  margin: 50px auto 0 auto;
-  width: 300px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  background-color: #eee;
-  border-radius: 6px;
-  padding: 60px;
-  h1 {
-    font-size: 60px;
-    line-height: 1;
-    letter-spacing: -1px;
-  }
-}
