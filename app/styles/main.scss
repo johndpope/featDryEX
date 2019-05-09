@@ -1,0 +1,56 @@
+$fontFam_uqReg: UniqloProRegular,
+"Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
+
+$fontFam_uqBold: UniqloProBold,
+"Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
+
+$fontFam_hel: "Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
+
+// FULL WIDTH SPECIFICITY
+// 
+.pt_primary #main .primary-content  {
+
+}
+
+
+// // SIDEBARRED SPECIFICITY
+// // 
+// #main .primary-content .product-grid-slider .content-second-slot.category-banner-slot {
+
+// }
+
+
+
+
+
+
+body {
+  background: #fafafa;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+.hero-unit {
+  margin: 50px auto 0 auto;
+  width: 300px;
+  font-size: 18px;
+  font-weight: 200;
+  line-height: 30px;
+  background-color: #eee;
+  border-radius: 6px;
+  padding: 60px;
+  h1 {
+    font-size: 60px;
+    line-height: 1;
+    letter-spacing: -1px;
+  }
+}
