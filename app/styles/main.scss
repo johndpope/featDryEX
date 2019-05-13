@@ -30,8 +30,13 @@ sans-serif;
     }
     img {
       display: block;
-      max-width: none;
-      max-height: none;
+      width: 100%;
+
+      @include bp(mid){
+        max-width: none;
+        max-height: none;
+      }
+      
     }
     h2 {
       border-bottom: none;
@@ -80,17 +85,30 @@ sans-serif;
     }
     .exCollect {
       margin-bottom: 200px;
+      
+      // padding: 0 15px;
       .exColHeader {
+        margin-bottom: 180px;
+
+        @include bp(mid){
           display: flex;
           justify-content: center;
           align-items: center;
-          margin-bottom: 180px;
+        }
+          
       }
       .exHedCpy {
-        width: 39%;
-        margin-left: -60px;
+        position: relative;
         padding: 30px 80px 60px;
         background: #f6ff00;
+        width: 75%;
+        margin: -60px auto 0;
+        z-index: 1;
+        @include bp(mid){
+          width: 39%;
+          margin-left: -60px;
+        }
+
         h2 {
           margin-bottom: 20px;
           font-size: 50px;
