@@ -20,187 +20,232 @@ sans-serif;
 
 // FULL WIDTH SPECIFICITY
 // 
-.pt_primary #main .primary-content  {
-  #exFeat {
-    padding-bottom: 1px;
-    color: #f6ff00;
-    background: black;
-    * {
-      box-sizing: border-box;
-    }
-    img {
-      display: block;
-      width: 100%;
+.pt_primary #main .primary-content {
+	#exFeat {
+		padding-bottom: 1px;
+		color: #f6ff00;
+		background: black;
 
-      @include bp(mid){
-        max-width: none;
-        max-height: none;
-      }
-      
-    }
-    h2 {
-      border-bottom: none;
-    }
-    .exHero01 {
-      position: relative;
-      width: 100%;
-      text-align: center;
-      h1 {
-        font-size: 90px;
-      }
-      h3 {
-        font-family: $fontFam_hel;
-        font-size: 20px;
-        letter-spacing: 1px;
-        white-space: nowrap;
-      }
-    }
-    .exHeader {
-      img {
-        width: 100%;
-      }
-    }
-    .exHroCpy {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-    .exFunctions {
-      position: relative;
-      text-align: center;
-    }
-    .exFunctRow {
-      display: flex;
-      justify-content: space-around;
-      position: absolute;
-      bottom: 0;
-      h3 {
-        font-size: 20px;
-        text-transform: uppercase;
-      }
-      p {
-        font-family: $fontFam_hel;
-      }
-    }
-    .exCollect {
-      margin-bottom: 200px;
-      
-      // padding: 0 15px;
-      .exColHeader {
-        margin-bottom: 180px;
+		* {
+			box-sizing: border-box;
+		}
 
-        @include bp(mid){
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
-          
-      }
-      .exHedCpy {
-        position: relative;
-        padding: 30px 80px 60px;
-        background: #f6ff00;
-        width: 75%;
-        margin: -60px auto 0;
-        z-index: 1;
-        @include bp(mid){
-          width: 39%;
-          margin-left: -60px;
-        }
+		img {
+			display: block;
+			width: 100%;
 
-        h2 {
-          margin-bottom: 20px;
-          font-size: 50px;
-          font-style: italic;
-        }
-        p {
-          font-family: $fontFam_hel;
-          color: black;
-          line-height: 1.4;
-        }
-      }
-      .exDeets {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        position: relative;
-      }
-      img.exDeetsMain {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
-        // display: none;
-        max-width: 600px;
-        width: 70%;
+			@include bp(mid) {
+				max-width: none;
+				max-height: none;
+			}
 
-        
-      }
-      .exOneDeet {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 50%;
-        margin: 50px 0;
-        padding-left: 5%;
-        z-index: 2;
-        // border: 1px solid yellow;
+		}
 
-        &:nth-child(odd) {
-          align-items: flex-end;
-          padding-left: 0;
-          padding-right: 5%;
-        }
+		h2 {
+			border-bottom: none;
+		}
 
-        .exAlignDeet {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          width: 50%;
-          max-width: 200px;
-          text-align: center;
-          // border: 1px solid blue;
-          &:nth-child(odd) {
+		.exHero01 {
+			position: relative;
+			width: 100%;
+			text-align: center;
 
-          }
-        }
+			h1 {
+				font-size: 60px;
 
-        img.exDeetImg {
-          width: 100%;
-          border: 3px solid white;
-          border-radius: 50%;
-        }
+				@include bp(sm) {
+					font-size: 90px;
 
-        p {
-          font-family: $fontFam_hel;
-          color: white;
-        }
-      }
-      .exCtas {
-        display: flex;
-        justify-content: center;
+				}
+			}
+
+			h3 {
+				font-family: $fontFam_hel;
+				font-size: 20px;
+				letter-spacing: 1px;
+				white-space: nowrap;
+			}
+		}
+
+		.exHeader {
+			img {
+				width: 100%;
+			}
+		}
+
+		.exHroCpy {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		.exFunctions {
+			position: relative;
+			text-align: center;
+		}
+
+		.exFunctRow {
+			display: flex;
+			justify-content: space-around;
+			position: absolute;
+			bottom: 0;
+
+			h3 {
+				font-size: 20px;
+				text-transform: uppercase;
+			}
+
+			p {
+				font-family: $fontFam_hel;
+			}
+		}
+
+		.exCollect {
+			margin-bottom: 200px;
+
+			// padding: 0 15px;
+			.exColHeader {
+				margin-bottom: 300px;
+				@include bp(mid) {
+					margin-bottom: 180px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+				}
+			}
+
+			.exHedCpy {
+				position: relative;
+				padding: 30px 80px 60px;
+				background: #f6ff00;
+				width: 75%;
+				margin: -60px auto 0;
+				z-index: 1;
+
+				@include bp(mid) {
+					width: 39%;
+					margin-left: -60px;
+				}
+
+				h2 {
+					margin-bottom: 20px;
+					font-size: 50px;
+					font-style: italic;
+				}
+
+				p {
+					font-family: $fontFam_hel;
+					color: black;
+					line-height: 1.4;
+				}
+			}
+
+			.exDeets {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				position: relative;
+			}
+
+			img.exDeetsMain {
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				z-index: 1;
+				// display: none;
+				max-width: 600px;
+				width: 70%;
+
+
+			}
+
+			.exOneDeet {
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				width: 50%;
+				padding-left: 5%;
+				z-index: 2;
+				// border: 1px solid yellow;
+
+				&:nth-child(odd) {
+					align-items: flex-end;
+					padding-left: 0;
+					padding-right: 5%;
+				}
+
+				&.exOneDeet-top {
+					margin-top: -180px;
+
+					@include bp(mid) {
+						margin-top: -50px;
+
+					}
+				}
+
+				&.exOneDeet-bottom {
+					margin-top: 75%;
+
+					@include bp(mid) {
+						margin-top: 22%;
+
+					}
+				}
+
+				.exAlignDeet {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					width: 50%;
+					max-width: 200px;
+					text-align: center;
+
+					// border: 1px solid blue;
+					&:nth-child(odd) {}
+				}
+
+				img.exDeetImg {
+					width: 100%;
+					border: 3px solid white;
+					border-radius: 50%;
+				}
+
+				p {
+					font-family: $fontFam_hel;
+					color: white;
+				}
+			}
+
+			.exCtas {
+				display: flex;
+				justify-content: center;
         margin-top: 80px;
-      }
-      .exOneCta {
-        margin: 0 10px;
-        padding: 25px 20px;
-        font-size: 18px;
-        color: black;
-        text-transform: uppercase;
-        text-align: center;
-        background: #f6ff00;
-        border: 1px solid black;
+			}
+
+			.exOneCta {
+				margin: 0 10px;
+				padding: 25px 20px;
+				font-size: 16px;
+				color: black;
+				text-transform: uppercase;
+				text-align: center;
+				background: #f6ff00;
+				border: 1px solid black;
         width: 45%;
-        @include bp(mid){
-        padding: 15px 20px;
+        cursor: pointer;
+        
 
-        width: 18%;
+				@include bp(mid) {
+					padding: 15px 20px;
+					font-size: 18px;
 
-        }
-      }
-    }
-  }
+					width: 18%;
+
+				}
+			}
+		}
+	}
 }
 
 
@@ -209,4 +254,3 @@ sans-serif;
 // #main .primary-content .product-grid-slider .content-second-slot.category-banner-slot {
 
 // }
-
