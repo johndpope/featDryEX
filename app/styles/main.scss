@@ -20,7 +20,7 @@ sans-serif;
 
 // FULL WIDTH SPECIFICITY
 // 
-.pt_primary #main .primary-content {
+// .pt_primary #main .primary-content {
 	#exFeat {
 		padding-bottom: 1px;
 		color: #f6ff00;
@@ -158,7 +158,13 @@ sans-serif;
 				width: 70%;
 
 
-			}
+      }
+      
+      .exOneDeet-top:nth-child(2) svg{
+          position: absolute;
+          z-index: -1;
+          width: 25%;
+      }
 
 			.exOneDeet {
 				display: flex;
@@ -182,7 +188,9 @@ sans-serif;
 						margin-top: -50px;
 
 					}
-				}
+        }
+        
+     
 
 				&.exOneDeet-bottom {
 					margin-top: 75%;
@@ -246,7 +254,7 @@ sans-serif;
 			}
 		}
 	}
-}
+// }
 
 
 // // SIDEBARRED SPECIFICITY
