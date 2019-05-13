@@ -83,17 +83,24 @@ sans-serif;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
-    width: 100%;
-	color: #f6ff00;
-    
-    h3{
-      margin-top: 20px;
+		width: 100%;
+		color: #f6ff00;
 
-    }
+		h1 {
+			color: #f6ff00;
+
+		}
+
+		h3 {
+			margin-top: 20px;
+			color: #f6ff00;
+
+		}
+
 		@include bp(sm) {
-      width: auto;
-      margin-top: 0px;
-      
+			width: auto;
+			margin-top: 0px;
+
 		}
 	}
 
@@ -113,9 +120,9 @@ sans-serif;
 
 		h3 {
 			font-size: 18px;
-      text-transform: uppercase;
-	color: #f6ff00;
-      
+			text-transform: uppercase;
+			color: #f6ff00;
+
 
 			@include bp(sm) {
 				font-size: 20px;
@@ -124,21 +131,22 @@ sans-serif;
 		}
 
 		p {
-      font-family: $fontFam_hel;
-      font-size: 14px;
-	color: #f6ff00;
+			font-family: $fontFam_hel;
+			font-size: 14px;
+			color: #f6ff00;
 
-    }
-    .exOneFunct{
-      margin: 40px 0;
-      padding: 0 4%;
+		}
 
-      @include bp(sm){
-        margin: 0;
-        padding: 0;
+		.exOneFunct {
+			margin: 40px 0;
+			padding: 0 4%;
 
-      }
-    }
+			@include bp(sm) {
+				margin: 0;
+				padding: 0;
+
+			}
+		}
 	}
 
 	.exCollect {
@@ -161,39 +169,40 @@ sans-serif;
 			background: #f6ff00;
 			width: 75%;
 			margin: -60px auto 0;
-      z-index: 1;
+			z-index: 1;
 			padding: 20px 60px 40px;
-      
+
 
 			@include bp(mid) {
-			padding: 30px 80px 60px;
+				padding: 30px 80px 60px;
 
 				width: 39%;
 				margin-left: -60px;
 			}
 
 			h2 {
-        margin-bottom: 20px;
+				margin-bottom: 20px;
 				font-style: italic;
-        font-size: 30px;
-        font-weight: 700;
-        text-transform: uppercase;
-        @include bp(sm){
-				font-size: 50px;
+				font-size: 30px;
+				font-weight: 700;
+				text-transform: uppercase;
 
-        }
+				@include bp(sm) {
+					font-size: 50px;
+
+				}
 			}
 
 			p {
 				font-family: $fontFam_hel;
 				color: black;
-        line-height: 1.4;
-        font-size: 16px;
+				line-height: 1.4;
+				font-size: 16px;
 
-        @include bp(sm){
-          font-size: 20px;
-  
-          }
+				@include bp(sm) {
+					font-size: 20px;
+
+				}
 			}
 		}
 
