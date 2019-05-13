@@ -21,239 +21,296 @@ sans-serif;
 // FULL WIDTH SPECIFICITY
 // 
 // .pt_primary #main .primary-content {
-	#exFeat {
-		padding-bottom: 1px;
-		color: #f6ff00;
-		background: black;
+#exFeat {
+	padding-bottom: 1px;
+	color: #f6ff00;
+	background: black;
 
-		* {
-			box-sizing: border-box;
+	* {
+		box-sizing: border-box;
+	}
+
+	img {
+		display: block;
+		width: 100%;
+
+		@include bp(mid) {
+			max-width: none;
+			max-height: none;
 		}
 
-		img {
-			display: block;
-			width: 100%;
+	}
 
-			@include bp(mid) {
-				max-width: none;
-				max-height: none;
+	h2 {
+		border-bottom: none;
+	}
+
+	.exHero01 {
+		position: relative;
+		width: 100%;
+		text-align: center;
+
+		h1 {
+			font-size: 40px;
+
+			@include bp(sm) {
+				font-size: 90px;
+
 			}
-
 		}
 
-		h2 {
-			border-bottom: none;
-		}
+		h3 {
+			font-family: $fontFam_hel;
+			font-size: 16px;
+			letter-spacing: 1px;
 
-		.exHero01 {
-			position: relative;
-			width: 100%;
-			text-align: center;
-
-			h1 {
-				font-size: 60px;
-
-				@include bp(sm) {
-					font-size: 90px;
-
-				}
-			}
-
-			h3 {
-				font-family: $fontFam_hel;
+			@include bp(sm) {
 				font-size: 20px;
 				letter-spacing: 1px;
 				white-space: nowrap;
 			}
 		}
+	}
 
-		.exHeader {
-			img {
-				width: 100%;
-			}
+	.exHeader {
+		img {
+			width: 100%;
 		}
+	}
 
-		.exHroCpy {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
+	.exHroCpy {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+    width: 100%;
+	color: #f6ff00;
+    
+    h3{
+      margin-top: 20px;
+
+    }
+		@include bp(sm) {
+      width: auto;
+      margin-top: 0px;
+      
 		}
+	}
 
-		.exFunctions {
-			position: relative;
-			text-align: center;
-		}
+	.exFunctions {
+		position: relative;
+		text-align: center;
+	}
 
-		.exFunctRow {
+	.exFunctRow {
+		@include bp(sm) {
 			display: flex;
 			justify-content: space-around;
 			position: absolute;
 			bottom: 0;
+		}
 
-			h3 {
+
+		h3 {
+			font-size: 18px;
+      text-transform: uppercase;
+	color: #f6ff00;
+      
+
+			@include bp(sm) {
 				font-size: 20px;
-				text-transform: uppercase;
+
+			}
+		}
+
+		p {
+      font-family: $fontFam_hel;
+      font-size: 14px;
+	color: #f6ff00;
+
+    }
+    .exOneFunct{
+      margin: 40px 0;
+      padding: 0 4%;
+
+      @include bp(sm){
+        margin: 0;
+        padding: 0;
+
+      }
+    }
+	}
+
+	.exCollect {
+		margin-bottom: 200px;
+
+		// padding: 0 15px;
+		.exColHeader {
+			margin-bottom: 300px;
+
+			@include bp(mid) {
+				margin-bottom: 180px;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
+
+		.exHedCpy {
+			position: relative;
+			background: #f6ff00;
+			width: 75%;
+			margin: -60px auto 0;
+      z-index: 1;
+			padding: 20px 60px 40px;
+      
+
+			@include bp(mid) {
+			padding: 30px 80px 60px;
+
+				width: 39%;
+				margin-left: -60px;
+			}
+
+			h2 {
+        margin-bottom: 20px;
+				font-style: italic;
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        @include bp(sm){
+				font-size: 50px;
+
+        }
 			}
 
 			p {
 				font-family: $fontFam_hel;
+				color: black;
+        line-height: 1.4;
+        font-size: 16px;
+
+        @include bp(sm){
+          font-size: 20px;
+  
+          }
 			}
 		}
 
-		.exCollect {
-			margin-bottom: 200px;
+		.exDeets {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			position: relative;
+		}
 
-			// padding: 0 15px;
-			.exColHeader {
-				margin-bottom: 300px;
+		img.exDeetsMain {
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			z-index: 1;
+			// display: none;
+			max-width: 600px;
+			width: 70%;
+
+
+		}
+
+		.exOneDeet-top:nth-child(2) svg {
+			position: absolute;
+			z-index: -1;
+			width: 25%;
+		}
+
+		.exOneDeet {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			width: 50%;
+			padding-left: 5%;
+			z-index: 2;
+			// border: 1px solid yellow;
+
+			&:nth-child(odd) {
+				align-items: flex-end;
+				padding-left: 0;
+				padding-right: 5%;
+			}
+
+			&.exOneDeet-top {
+				margin-top: -180px;
+
 				@include bp(mid) {
-					margin-bottom: 180px;
-					display: flex;
-					justify-content: center;
-					align-items: center;
+					margin-top: -50px;
+
 				}
 			}
 
-			.exHedCpy {
-				position: relative;
-				padding: 30px 80px 60px;
-				background: #f6ff00;
-				width: 75%;
-				margin: -60px auto 0;
-				z-index: 1;
+
+
+			&.exOneDeet-bottom {
+				margin-top: 75%;
 
 				@include bp(mid) {
-					width: 39%;
-					margin-left: -60px;
-				}
+					margin-top: 22%;
 
-				h2 {
-					margin-bottom: 20px;
-					font-size: 50px;
-					font-style: italic;
-				}
-
-				p {
-					font-family: $fontFam_hel;
-					color: black;
-					line-height: 1.4;
 				}
 			}
 
-			.exDeets {
-				display: flex;
-				justify-content: space-between;
-				flex-wrap: wrap;
-				position: relative;
-			}
-
-			img.exDeetsMain {
-				position: absolute;
-				left: 50%;
-				transform: translateX(-50%);
-				z-index: 1;
-				// display: none;
-				max-width: 600px;
-				width: 70%;
-
-
-      }
-      
-      .exOneDeet-top:nth-child(2) svg{
-          position: absolute;
-          z-index: -1;
-          width: 25%;
-      }
-
-			.exOneDeet {
+			.exAlignDeet {
 				display: flex;
 				flex-direction: column;
-				align-items: flex-start;
+				align-items: center;
 				width: 50%;
-				padding-left: 5%;
-				z-index: 2;
-				// border: 1px solid yellow;
-
-				&:nth-child(odd) {
-					align-items: flex-end;
-					padding-left: 0;
-					padding-right: 5%;
-				}
-
-				&.exOneDeet-top {
-					margin-top: -180px;
-
-					@include bp(mid) {
-						margin-top: -50px;
-
-					}
-        }
-        
-     
-
-				&.exOneDeet-bottom {
-					margin-top: 75%;
-
-					@include bp(mid) {
-						margin-top: 22%;
-
-					}
-				}
-
-				.exAlignDeet {
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					width: 50%;
-					max-width: 200px;
-					text-align: center;
-
-					// border: 1px solid blue;
-					&:nth-child(odd) {}
-				}
-
-				img.exDeetImg {
-					width: 100%;
-					border: 3px solid white;
-					border-radius: 50%;
-				}
-
-				p {
-					font-family: $fontFam_hel;
-					color: white;
-				}
-			}
-
-			.exCtas {
-				display: flex;
-				justify-content: center;
-        margin-top: 80px;
-			}
-
-			.exOneCta {
-				margin: 0 10px;
-				padding: 25px 20px;
-				font-size: 16px;
-				color: black;
-				text-transform: uppercase;
+				max-width: 200px;
 				text-align: center;
-				background: #f6ff00;
-				border: 1px solid black;
-        width: 45%;
-        cursor: pointer;
-        
 
-				@include bp(mid) {
-					padding: 15px 20px;
-					font-size: 18px;
+				// border: 1px solid blue;
+				&:nth-child(odd) {}
+			}
 
-					width: 18%;
+			img.exDeetImg {
+				width: 100%;
+				border: 3px solid white;
+				border-radius: 50%;
+			}
 
-				}
+			p {
+				font-family: $fontFam_hel;
+				color: white;
+			}
+		}
+
+		.exCtas {
+			display: flex;
+			justify-content: center;
+			margin-top: 80px;
+		}
+
+		.exOneCta {
+			margin: 0 10px;
+			padding: 25px 20px;
+			font-size: 16px;
+			color: black;
+			text-transform: uppercase;
+			text-align: center;
+			background: #f6ff00;
+			border: 1px solid black;
+			width: 45%;
+			cursor: pointer;
+
+
+			@include bp(mid) {
+				padding: 15px 20px;
+				font-size: 18px;
+
+				width: 18%;
+
 			}
 		}
 	}
+}
+
 // }
 
 
