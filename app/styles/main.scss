@@ -25,6 +25,8 @@ sans-serif;
 	padding-bottom: 1px;
 	color: #f6ff00;
 	background: black;
+	overflow: hidden;
+
 
 	* {
 		box-sizing: border-box;
@@ -171,6 +173,7 @@ sans-serif;
 			margin: -60px auto 0;
 			z-index: 1;
 			padding: 20px 60px 40px;
+			transform: translateX(110%);
 
 
 			@include bp(mid) {
@@ -329,18 +332,45 @@ sans-serif;
 	}
 
 	//SVG animation
-	.active svg{
-		animation: fillLine .5s ;
+	.active .fillFirst {
+		animation: fillLine .5s;
 	}
+
 	@keyframes fillLine {
 		100% {
-		  fill: #f6ff00;
+			fill: #f6ff00;
 		}
-	  }
+	}
+}
+
+.stroke-animate {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+	animation: dash 5s linear forwards;
+}
+
+@keyframes dash {
+	to {
+		stroke-dashoffset: 0;
+	}
 }
 
 // }
 
+
+.box-expand{
+	animation: expand 1s forwards;
+}
+
+@keyframes expand{
+	0%{
+		transform: translateX(110%);
+	}
+	100%{
+		transform: translateX(0%)
+	}
+
+}
 
 // // SIDEBARRED SPECIFICITY
 // // 
