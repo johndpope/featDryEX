@@ -258,7 +258,8 @@ sans-serif;
 				padding-left: 0;
 				padding-right: 5%;
 			}
-			&.exOneDeet-top {
+      &.exOneDeet-top-left,
+      &.exOneDeet-top-right {
 				margin-top: -215px;
 				@include bp(sm) {
 					margin-top: -180px;
@@ -344,30 +345,33 @@ sans-serif;
 
 .animated.stroke-animate-top-1 {
 	stroke-dasharray: 1000;
-	stroke-dashoffset: 1000;
-  animation: preStroke .8s linear forwards, currentStroke .8s linear forwards .4s;
+  stroke-dashoffset: 1000;
+  animation-direction: reverse;
+  animation: preStroke .8s linear  forwards, currentStroke .8s linear forwards .4s;
 }
 .animated.stroke-animate-top-2 {
 	stroke-dasharray: 1000;
-	stroke-dashoffset: 1000;
+  stroke-dashoffset: 1000;
+  animation-direction: reverse;
   animation: preStroke .4s linear forwards .25s, currentStroke .8s linear forwards .6s;
 }
 .animated.stroke-animate-top-3 {
 	stroke-dasharray: 1000;
-	stroke-dashoffset: 1000;
+  stroke-dashoffset: 1000;
+  animation-direction: reverse;
   animation: preStroke .5s linear forwards .2s, currentStroke .5s linear forwards 1.2s;
 }
 
 @keyframes preStroke {
-	from {
-		stroke: #f6ff00;
-    stroke-dashoffset: 1000;
-	}
-
 	to {
 		stroke: #f6ff00;
     stroke-dashoffset: 0;
 	}
+
+	// to {
+	// 	stroke: #f6ff00;
+  //   stroke-dashoffset: 1000;
+	// }
 }
 
 // @keyframes currentStroke {
