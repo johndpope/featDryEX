@@ -357,7 +357,9 @@ sans-serif;
 				width: 100%;
 				border: 3px solid white;
 				border-radius: 50%;
+
 			}
+
 
 			p {
 				font-family: $fontFam_hel;
@@ -383,38 +385,34 @@ sans-serif;
 			width: 45%;
 			cursor: pointer;
 
-
 			@include bp(mid) {
 				padding: 15px 20px;
 				font-size: 18px;
-
 				width: 18%;
 
 			}
 		}
 	}
-
-
 }
 
 .animated.stroke-animate-top-1 {
 	stroke-dasharray: 1000;
 	stroke-dashoffset: 1000;
-	animation-direction: reverse;
+	// animation-direction: reverse;
 	animation: preStroke .8s linear forwards, currentStroke .8s linear forwards .4s;
 }
 
 .animated.stroke-animate-top-2 {
 	stroke-dasharray: 1000;
 	stroke-dashoffset: 1000;
-	animation-direction: reverse;
+	// animation-direction: reverse;
 	animation: preStroke .4s linear forwards .25s, currentStroke .8s linear forwards .6s;
 }
 
 .animated.stroke-animate-top-3 {
 	stroke-dasharray: 1000;
 	stroke-dashoffset: 1000;
-	animation-direction: reverse;
+	// animation-direction: reverse;
 	animation: preStroke .5s linear forwards .4s, currentStroke .5s linear forwards 1.2s;
 }
 
@@ -445,7 +443,22 @@ sans-serif;
 // }
 
 // }
+.deetImgFade {
+	@include bp(mid) {
+		opacity: 0;
+		animation: fadeIn .5s ease-out forwards .35s;
+	}
+}
 
+@keyframes fadeIn {
+	0% {
+		opacity: 0
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
 
 .box-expand {
 	@include bp(mid) {
