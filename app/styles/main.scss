@@ -220,15 +220,19 @@ sans-serif;
 			z-index: 1;
 			// display: none;
 			max-width: 600px;
-			width: 70%;
+			width: 75%;
 
-
+			@include bp(mid) {
+				width: 50%;
+			}
 		}
 
 		.exOneDeet-top:nth-child(2) svg {
 			position: absolute;
 			z-index: -1;
 			width: 25%;
+			top: 40px;
+			left: 180px;
 		}
 
 		.exOneDeet {
@@ -247,7 +251,12 @@ sans-serif;
 			}
 
 			&.exOneDeet-top {
-				margin-top: -180px;
+				margin-top: -215px;
+
+				@include bp(sm) {
+					margin-top: -180px;
+
+				}
 
 				@include bp(mid) {
 					margin-top: -50px;
@@ -318,6 +327,16 @@ sans-serif;
 			}
 		}
 	}
+
+	//SVG animation
+	.active svg{
+		animation: fillLine .5s ;
+	}
+	@keyframes fillLine {
+		100% {
+		  fill: #f6ff00;
+		}
+	  }
 }
 
 // }
