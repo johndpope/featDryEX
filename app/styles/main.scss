@@ -150,7 +150,7 @@ sans-serif;
 		}
   }
   .img-animate{
-    animation: img-expand 1s forwards;
+    animation: img-expand .8s forwards;
   }
   @keyframes img-expand {
     0%{
@@ -250,13 +250,27 @@ sans-serif;
 			top: 40px;
 			left: 180px;
     }
+    .exOneDeet-top-right svg{
+      position: absolute;
+      width: 25%;
+      z-index: -1;
+      top: 20px;
+      right: 250px;
+    }
     .exOneDeet-bottom-left svg {
       width: 25%;
       position: absolute;
       left: 210px;
       bottom: 100px;
       z-index: -1;
-		}
+    }
+    .exOneDeet-bottom-right svg{
+      position: absolute;
+      width: 25%;
+      z-index: -1;
+      right: 220px;
+      bottom: 70px;
+    }
 
 		.exOneDeet {
 			display: flex;
@@ -345,16 +359,7 @@ sans-serif;
 		}
 	}
 
-	//SVG animation
-	.active .fillFirst {
-		animation: fillLine .5s;
-	}
 
-	@keyframes fillLine {
-		100% {
-			fill: #f6ff00;
-		}
-	}
 }
 
 .animated.stroke-animate-top-1 {
@@ -373,12 +378,12 @@ sans-serif;
 	stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation-direction: reverse;
-  animation: preStroke .5s linear forwards .2s, currentStroke .5s linear forwards 1.2s;
+  animation: preStroke .5s linear forwards .4s, currentStroke .5s linear forwards 1.2s;
 }
 
 @keyframes preStroke {
 	to {
-		stroke: #f6ff00;
+		stroke: #fff;
     stroke-dashoffset: 0;
 	}
 
