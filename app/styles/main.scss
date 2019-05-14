@@ -286,375 +286,765 @@ sans-serif;
             width: 100%;
             text-align: center;
 
-            h1 {
-                font-size: 40px;
-
-                @include bp(sm) {
-                    font-size: 90px;
-
-                }
-            }
-
-            h3 {
-                font-family: $fontFam_hel;
-                font-size: 16px;
-                letter-spacing: 1px;
-
-                @include bp(sm) {
-                    font-size: 20px;
-                    letter-spacing: 1px;
-                    white-space: nowrap;
-                }
-            }
-        }
-
-        .exHeader {
-            img {
-                width: 100%;
-            }
-        }
-
-        .exHroCpy {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 100%;
-            color: #f6ff00;
-
-            h1 {
-                color: #f6ff00;
-
-            }
-
-            h3 {
-                margin-top: 10px;
-                font-size: 22px;
-                color: #f6ff00;
-
-            }
-
-            @include bp(sm) {
-                width: auto;
-                margin-top: 0px;
-
-            }
-        }
-
-        .exFunctions {
-            position: relative;
-            text-align: center;
-        }
-
-        .exFunctRow {
-            @include bp(sm) {
-                display: flex;
-                justify-content: space-around;
-                justify-content: center; // RWW - This was overriding desktop styling
-                position: absolute;
-                bottom: 0;
-                bottom: 45%; // RWW - This was overriding desktop styling
-            }
-
-
-            h3 {
-                font-size: 18px;
-                text-transform: uppercase;
-                color: #f6ff00;
-
-
-                @include bp(sm) {
-                    font-size: 20px;
-                    font-size: 26px; // RWW - This was overriding desktop styling
-
-                }
-            }
-
-            p {
-                font-family: $fontFam_hel;
-                font-size: 14px;
-                font-size: 19px; // RWW - This was overriding desktop styling
-                color: #f6ff00;
-
-            }
-
-            .exOneFunct {
-                margin: 40px 0;
-                padding: 0 4%;
-
-                @include bp(sm) {
-                    margin: 0;
-                    margin: 0 40px; // RWW - This was overriding desktop styling
-                    padding: 0;
-
-                }
-            }
-        }
-
-        .exCollect {
-            margin-bottom: 200px;
-
-            // padding: 0 15px;
-            .exColHeader {
-                margin-bottom: 300px;
-
-                @include bp(mid) {
-                    margin-bottom: 180px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                }
-            }
-
-            .exHedCpy {
+            .exHero01 {
                 position: relative;
-                background: #f6ff00;
-                width: 75%;
-                margin: -60px auto 0;
-                z-index: 1;
-                padding: 20px 60px 40px;
+                width: 100%;
+                text-align: center;
 
-
-                @include bp(mid) {
-                    padding: 30px 80px 60px;
-                    transform: translateX(110%);
-
-                    width: 39%;
-                    margin-left: -60px;
-                }
-
-                h2 {
-                    margin-bottom: 20px;
-                    font-style: italic;
-                    font-size: 30px;
-                    font-weight: 700;
-                    text-transform: uppercase;
+                h1 {
+                    font-size: 40px;
 
                     @include bp(sm) {
-                        font-size: 50px;
+                        font-size: 90px;
 
                     }
                 }
 
-                p {
+                h3 {
                     font-family: $fontFam_hel;
-                    color: black;
-                    line-height: 1.4;
                     font-size: 16px;
+                    letter-spacing: 1px;
+
+                    @include bp(sm) {
+                        font-size: 20px;
+                        letter-spacing: 1px;
+                        white-space: nowrap;
+                    }
+                }
+            }
+
+            .exHeader {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .exHroCpy {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                color: #f6ff00;
+
+                h1 {
+                    color: #f6ff00;
+
+                }
+
+                h3 {
+                    margin-top: 20px;
+                    color: #f6ff00;
+
+                }
+
+                @include bp(sm) {
+                    width: auto;
+                    margin-top: 0px;
+
+                }
+            }
+
+            .exFunctions {
+                position: relative;
+                text-align: center;
+            }
+
+            .exFunctRow {
+                @include bp(sm) {
+                    display: flex;
+                    justify-content: space-around;
+                    position: absolute;
+                    bottom: 0;
+                }
+
+
+                h3 {
+                    font-size: 18px;
+                    text-transform: uppercase;
+                    color: #f6ff00;
+
 
                     @include bp(sm) {
                         font-size: 20px;
 
                     }
                 }
-            }
-
-            .exDeets {
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-                position: relative;
-            }
-
-            img.exDeetsMain {
-                position: absolute;
-                left: 50%;
-                transform: translateX(-50%);
-                z-index: 1;
-                // display: none;
-                max-width: 600px;
-                width: 75%;
-
-                @include bp(mid) {
-                    width: 50%;
-                }
-            }
-
-            .exOneDeet-top:nth-child(2) svg {
-                position: absolute;
-                z-index: -1;
-                width: 25%;
-                top: 40px;
-                left: 180px;
-            }
-
-            .exOneDeet {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                width: 50%;
-                padding-left: 5%;
-                z-index: 2;
-                // border: 1px solid yellow;
-
-                &:nth-child(odd) {
-                    align-items: flex-end;
-                    padding-left: 0;
-                    padding-right: 5%;
-                }
-
-                &.exOneDeet-top {
-                    margin-top: -215px;
-
-                    @include bp(sm) {
-                        margin-top: -180px;
-
-                    }
-
-                    @include bp(mid) {
-                        margin-top: -50px;
-
-                    }
-                }
-
-
-
-                &.exOneDeet-bottom {
-                    margin-top: 75%;
-
-                    @include bp(mid) {
-                        margin-top: 22%;
-
-                    }
-                }
-
-                .exAlignDeet {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    width: 50%;
-                    max-width: 200px;
-                    text-align: center;
-
-                    // border: 1px solid blue;
-                    &:nth-child(odd) {}
-                }
-
-                img.exDeetImg {
-                    width: 100%;
-                    border: 3px solid white;
-                    border-radius: 50%;
-                }
 
                 p {
                     font-family: $fontFam_hel;
-                    color: white;
+                    font-size: 14px;
+                    color: #f6ff00;
+
+                }
+
+                .exOneFunct {
+                    margin: 40px 0;
+                    padding: 0 4%;
+
+                    @include bp(sm) {
+                        margin: 0;
+                        padding: 0;
+
+                    }
                 }
             }
 
-            .exCtas {
+            .img-animate {
+                @include bp(mid) {
+                    animation: img-expand .8s forwards;
+                }
+            }
+
+            @keyframes img-expand {
+                0% {
+                    transform: translateX(-100%)
+                }
+
+                100% {
+                    transform: translateX(0%)
+                }
+
+            }
+
+            .exCollect {
+                margin-bottom: 200px;
+
+                // padding: 0 15px;
+                .exColHeader {
+                    margin-bottom: 300px;
+
+                    @include bp(mid) {
+                        img {
+                            transform: translateX(-100%)
+                        }
+
+                        margin-bottom: 180px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                .exHedCpy {
+                    position: relative;
+                    background: #f6ff00;
+                    width: 75%;
+                    margin: -60px auto 0;
+                    z-index: 1;
+                    padding: 20px 60px 40px;
+
+
+                    @include bp(mid) {
+                        padding: 30px 80px 60px;
+                        transform: translateX(110%);
+
+                        width: 39%;
+                        margin-left: -60px;
+                    }
+
+                    h2 {
+                        margin-bottom: 20px;
+                        font-style: italic;
+                        font-size: 30px;
+                        font-weight: 700;
+                        text-transform: uppercase;
+
+                        @include bp(sm) {
+                            font-size: 50px;
+
+                        }
+                    }
+
+                    p {
+                        font-family: $fontFam_hel;
+                        color: black;
+                        line-height: 1.4;
+                        font-size: 16px;
+
+                        @include bp(sm) {
+                            font-size: 20px;
+
+                        }
+                    }
+                }
+
+                .exDeets {
+                    display: flex;
+                    justify-content: space-between;
+                    flex-wrap: wrap;
+                    position: relative;
+                }
+
+                img.exDeetsMain {
+                    position: absolute;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    z-index: 1;
+                    // display: none;
+                    max-width: 600px;
+                    width: 75%;
+
+                    @include bp(mid) {
+                        width: 50%;
+                    }
+                }
+
+                .exOneDeet-top-left svg {
+                    display: none;
+
+                    @include bp(mid) {
+                        display: block;
+                        position: absolute;
+                        z-index: -1;
+                        width: 25%;
+                        top: 40px;
+                        left: 180px;
+                    }
+                }
+
+                .exOneDeet-top-right svg {
+                    display: none;
+
+                    @include bp(mid) {
+                        display: block;
+                        position: absolute;
+                        width: 25%;
+                        z-index: -1;
+                        top: 20px;
+                        right: 250px;
+                    }
+                }
+
+                .exOneDeet-bottom-left svg {
+                    display: none;
+
+                    @include bp(mid) {
+                        display: block;
+                        width: 25%;
+                        position: absolute;
+                        left: 210px;
+                        bottom: 100px;
+                        z-index: -1;
+                    }
+                }
+
+                .exOneDeet-bottom-right svg {
+                    display: none;
+
+                    @include bp(mid) {
+                        display: block;
+                        position: absolute;
+                        width: 25%;
+                        z-index: -1;
+                        right: 220px;
+                        bottom: 70px;
+                    }
+                }
+
+                .exOneDeet {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    width: 50%;
+                    padding-left: 5%;
+                    z-index: 2;
+                    // border: 1px solid yellow;
+
+                    &:nth-child(odd) {
+                        align-items: flex-end;
+                        padding-left: 0;
+                        padding-right: 5%;
+                    }
+
+                    &.exOneDeet-top-left,
+                    &.exOneDeet-top-right {
+                        margin-top: -215px;
+
+                        @include bp(sm) {
+                            margin-top: -180px;
+                        }
+
+                        @include bp(mid) {
+                            margin-top: -50px;
+
+                        }
+                    }
+
+                    &.exOneDeet-bottom-left,
+                    &.exOneDeet-bottom-right {
+                        margin-top: 75%;
+
+                        @include bp(mid) {
+                            margin-top: 22%;
+
+                        }
+                    }
+
+                    .exAlignDeet {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        width: 50%;
+                        max-width: 200px;
+                        text-align: center;
+
+                        // border: 1px solid blue;
+                        &:nth-child(odd) {}
+                    }
+
+                    img.exDeetImg {
+                        width: 100%;
+                        border: 3px solid white;
+                        border-radius: 50%;
+
+                    }
+
+
+                    p {
+                        font-family: $fontFam_hel;
+                        color: white;
+                    }
+                }
+
+                .exCtas {
+                    display: flex;
+                    justify-content: center;
+                    margin-top: 80px;
+                }
+
+                .exOneCta {
+                    margin: 0 10px;
+                    padding: 10px 15px;
+                    font-size: 16px;
+                    color: black;
+                    text-transform: uppercase;
+                    text-align: center;
+                    background: #f6ff00;
+                    border: 1px solid black;
+                    width: 45%;
+                    cursor: pointer;
+
+                    @include bp(mid) {
+                        padding: 15px 20px;
+                        font-size: 18px;
+                        width: 18%;
+
+                    }
+                }
+            }
+        }
+
+        .animated.stroke-animate-top-1 {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            // animation-direction: reverse;
+            animation: preStroke .8s linear forwards, currentStroke .8s linear forwards .4s;
+        }
+
+        .animated.stroke-animate-top-2 {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            // animation-direction: reverse;
+            animation: preStroke .4s linear forwards .25s, currentStroke .8s linear forwards .6s;
+        }
+
+        .animated.stroke-animate-top-3 {
+            stroke-dasharray: 1000;
+            stroke-dashoffset: 1000;
+            // animation-direction: reverse;
+            animation: preStroke .5s linear forwards .4s, currentStroke .5s linear forwards 1.2s;
+        }
+
+        @keyframes preStroke {
+            to {
+                stroke: #fff;
+                stroke-dashoffset: 0;
+            }
+
+            // to {
+            // 	stroke: #f6ff00;
+            //   stroke-dashoffset: 1000;
+            // }
+        }
+
+        h1 {
+            font-size: 40px;
+
+            // 	to {
+            //     stroke: #fff;
+            //     stroke-dashoffset: 0;
+
+
+            // 	}
+            // }
+
+            // }
+            .deetImgFade {
+                @include bp(mid) {
+                    opacity: 0;
+                    animation: fadeIn .5s ease-out forwards .35s;
+                }
+            }
+
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+
+            @include bp(sm) {
+                font-size: 20px;
+                letter-spacing: 1px;
+                white-space: nowrap;
+            }
+        }
+    }
+
+    .exHeader {
+        img {
+            width: 100%;
+        }
+    }
+
+    .exHroCpy {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        color: #f6ff00;
+
+        h1 {
+            color: #f6ff00;
+
+        }
+
+        h3 {
+            margin-top: 10px;
+            font-size: 22px;
+            color: #f6ff00;
+
+        }
+
+        @include bp(sm) {
+            width: auto;
+            margin-top: 0px;
+
+        }
+    }
+
+    .exFunctions {
+        position: relative;
+        text-align: center;
+    }
+
+    .exFunctRow {
+        @include bp(sm) {
+            display: flex;
+            justify-content: space-around;
+            justify-content: center; // RWW - This was overriding desktop styling
+            position: absolute;
+            bottom: 0;
+            bottom: 45%; // RWW - This was overriding desktop styling
+        }
+
+
+        h3 {
+            font-size: 18px;
+            text-transform: uppercase;
+            color: #f6ff00;
+
+
+            @include bp(sm) {
+                font-size: 20px;
+                font-size: 26px; // RWW - This was overriding desktop styling
+
+            }
+        }
+
+        p {
+            font-family: $fontFam_hel;
+            font-size: 14px;
+            font-size: 19px; // RWW - This was overriding desktop styling
+            color: #f6ff00;
+
+        }
+
+        .exOneFunct {
+            margin: 40px 0;
+            padding: 0 4%;
+
+            @include bp(sm) {
+                margin: 0;
+                margin: 0 40px; // RWW - This was overriding desktop styling
+                padding: 0;
+
+            }
+        }
+    }
+
+    .exCollect {
+        margin-bottom: 200px;
+
+        // padding: 0 15px;
+        .exColHeader {
+            margin-bottom: 300px;
+
+            @include bp(mid) {
+                margin-bottom: 180px;
                 display: flex;
                 justify-content: center;
-                margin-top: 80px;
+                align-items: center;
+            }
+        }
+
+        .exHedCpy {
+            position: relative;
+            background: #f6ff00;
+            width: 75%;
+            margin: -60px auto 0;
+            z-index: 1;
+            padding: 20px 60px 40px;
+
+
+            @include bp(mid) {
+                padding: 30px 80px 60px;
+                transform: translateX(110%);
+
+                width: 39%;
+                margin-left: -60px;
             }
 
-            .exOneCta {
-                margin: 0 10px;
-                padding: 10px 15px;
-                font-size: 16px;
-                color: black;
+            h2 {
+                margin-bottom: 20px;
+                font-style: italic;
+                font-size: 30px;
+                font-weight: 700;
                 text-transform: uppercase;
-                text-align: center;
-                background: #f6ff00;
-                border: 1px solid black;
-                width: 45%;
-                cursor: pointer;
 
+                @include bp(sm) {
+                    font-size: 50px;
 
-                @include bp(mid) {
-                    padding: 15px 20px;
-                    font-size: 18px;
+                }
+            }
 
-                    width: 18%;
+            p {
+                font-family: $fontFam_hel;
+                color: black;
+                line-height: 1.4;
+                font-size: 16px;
+
+                @include bp(sm) {
+                    font-size: 20px;
 
                 }
             }
         }
 
-        //SVG animation
-        .active .fillFirst {
-            animation: fillLine .5s;
+        .exDeets {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            position: relative;
         }
 
-        @keyframes fillLine {
-            100% {
-                fill: #f6ff00;
+        img.exDeetsMain {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            // display: none;
+            max-width: 600px;
+            width: 75%;
+
+            @include bp(mid) {
+                width: 50%;
+            }
+        }
+
+        .exOneDeet-top:nth-child(2) svg {
+            position: absolute;
+            z-index: -1;
+            width: 25%;
+            top: 40px;
+            left: 180px;
+        }
+
+        .exOneDeet {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 50%;
+            padding-left: 5%;
+            z-index: 2;
+            // border: 1px solid yellow;
+
+            &:nth-child(odd) {
+                align-items: flex-end;
+                padding-left: 0;
+                padding-right: 5%;
+            }
+
+            &.exOneDeet-top {
+                margin-top: -215px;
+
+                @include bp(sm) {
+                    margin-top: -180px;
+
+                }
+
+                @include bp(mid) {
+                    margin-top: -50px;
+
+                }
+            }
+
+
+
+            &.exOneDeet-bottom {
+                margin-top: 75%;
+
+                @include bp(mid) {
+                    margin-top: 22%;
+
+                }
+            }
+
+            .exAlignDeet {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 50%;
+                max-width: 200px;
+                text-align: center;
+
+                // border: 1px solid blue;
+                &:nth-child(odd) {}
+            }
+
+            img.exDeetImg {
+                width: 100%;
+                border: 3px solid white;
+                border-radius: 50%;
+            }
+
+            p {
+                font-family: $fontFam_hel;
+                color: white;
+            }
+        }
+
+        .exCtas {
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+        }
+
+        .exOneCta {
+            margin: 0 10px;
+            padding: 10px 15px;
+            font-size: 16px;
+            color: black;
+            text-transform: uppercase;
+            text-align: center;
+            background: #f6ff00;
+            border: 1px solid black;
+            width: 45%;
+            cursor: pointer;
+
+
+            @include bp(mid) {
+                padding: 15px 20px;
+                font-size: 18px;
+
+                width: 18%;
+
             }
         }
     }
 
-    .animated.stroke-animate-top-1 {
-        stroke-dasharray: 1000;
-        stroke-dashoffset: 1000;
-        animation: preStroke .8s linear forwards, currentStroke .8s linear forwards .4s;
+    //SVG animation
+    .active .fillFirst {
+        animation: fillLine .5s;
     }
 
-    // .animated.stroke-animate-top-2 {
-    // 	stroke-dasharray: 1000;
-    // 	stroke-dashoffset: 1000;
-    //   animation: preStroke .4s linear forwards .3s, currentStroke .8s linear forwards .8s;
-    // }
-    // .animated.stroke-animate-top-3 {
-    // 	stroke-dasharray: 1000;
-    // 	stroke-dashoffset: 1000;
-    //   animation: preStroke .5s linear forwards .2s, currentStroke .5s linear forwards 1.2s;
-    // }
-
-    @keyframes preStroke {
-        from {
-            stroke: #f6ff00;
-            stroke-dashoffset: 1000;
-            opacity: 1;
-        }
-
-        to {
-            stroke: #f6ff00;
-            stroke-dashoffset: 0;
-            opacity: 0;
-        }
-    }
-
-    @keyframes currentStroke {
-        from {
-            stroke: #fff;
-            // 	stroke: #f6ff00;
-            stroke-dashoffset: 1000;
-            opacity: 0;
-        }
-
-        to {
-            stroke: #fff;
-            stroke-dashoffset: 0;
-            opacity: 1;
-
-
-        }
-    }
-
-    // }
-
-
-    .box-expand {
-        @include bp(mid) {
-            animation-delay: 1.2s;
-            animation: expand 1s forwards;
-        }
-    }
-
-    @keyframes expand {
-        0% {
-            transform: translateX(110%);
-        }
-
+    @keyframes fillLine {
         100% {
-            transform: translateX(0%)
+            fill: #f6ff00;
         }
+    }
+}
+
+.animated.stroke-animate-top-1 {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: preStroke .8s linear forwards, currentStroke .8s linear forwards .4s;
+}
+
+// .animated.stroke-animate-top-2 {
+// 	stroke-dasharray: 1000;
+// 	stroke-dashoffset: 1000;
+//   animation: preStroke .4s linear forwards .3s, currentStroke .8s linear forwards .8s;
+// }
+// .animated.stroke-animate-top-3 {
+// 	stroke-dasharray: 1000;
+// 	stroke-dashoffset: 1000;
+//   animation: preStroke .5s linear forwards .2s, currentStroke .5s linear forwards 1.2s;
+// }
+
+@keyframes preStroke {
+    from {
+        stroke: #f6ff00;
+        stroke-dashoffset: 1000;
+        opacity: 1;
+    }
+
+    to {
+        stroke: #f6ff00;
+        stroke-dashoffset: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes currentStroke {
+    from {
+        stroke: #fff;
+        // 	stroke: #f6ff00;
+        stroke-dashoffset: 1000;
+        opacity: 0;
+    }
+
+    to {
+        stroke: #fff;
+        stroke-dashoffset: 0;
+        opacity: 1;
+
 
     }
 }
 
-// // SIDEBARRED SPECIFICITY
-// // 
-// #main .primary-content .product-grid-slider .content-second-slot.category-banner-slot {
-
 // }
+
+
+.box-expand {
+    @include bp(mid) {
+        animation-delay: 1.2s;
+        animation: expand 1s forwards;
+    }
+}
+
+@keyframes expand {
+    0% {
+        transform: translateX(110%);
+    }
+
+    100% {
+        transform: translateX(0%)
+    }
+
+}
