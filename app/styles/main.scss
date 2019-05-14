@@ -345,41 +345,46 @@ sans-serif;
 .animated.stroke-animate-top-1 {
 	stroke-dasharray: 1000;
 	stroke-dashoffset: 1000;
-  animation: preStroke .8s linear forwards, currentStroke .8s linear forwards .8s;
+  animation: preStroke .8s linear forwards, currentStroke .8s linear forwards .4s;
 }
-.animated.stroke-animate-top-2 {
-	stroke-dasharray: 1000;
-	stroke-dashoffset: 1000;
-  animation: preStroke .8s linear forwards .3s, currentStroke .8s linear forwards .8s;
-}
-.animated.stroke-animate-top-3 {
-	stroke-dasharray: 1000;
-	stroke-dashoffset: 1000;
-  animation: preStroke .5s linear forwards .7s, currentStroke .5s linear forwards 1.1s;
-}
+// .animated.stroke-animate-top-2 {
+// 	stroke-dasharray: 1000;
+// 	stroke-dashoffset: 1000;
+//   animation: preStroke .4s linear forwards .3s, currentStroke .8s linear forwards .8s;
+// }
+// .animated.stroke-animate-top-3 {
+// 	stroke-dasharray: 1000;
+// 	stroke-dashoffset: 1000;
+//   animation: preStroke .5s linear forwards .2s, currentStroke .5s linear forwards 1.2s;
+// }
 
 @keyframes preStroke {
 	from {
 		stroke: #f6ff00;
-		stroke-dashoffset: 1000;
+    stroke-dashoffset: 1000;
+    opacity: 1;
 	}
 
 	to {
 		stroke: #f6ff00;
-		stroke-dashoffset: 0;
+    stroke-dashoffset: 0;
+    opacity: 0;
 	}
 }
 
 @keyframes currentStroke {
-	// from {
-  //   stroke: #fff;
-  //   	// 	stroke: #f6ff00;
-	// 	stroke-dashoffset: 1000;
-	// }
+	from {
+    stroke: #fff;
+    	// 	stroke: #f6ff00;
+    stroke-dashoffset: 1000;
+    opacity: 0;
+	}
 
 	to {
     stroke: #fff;
-		stroke-dashoffset: 0;
+    stroke-dashoffset: 0;
+    opacity: 1;
+    
     
 	}
 }
