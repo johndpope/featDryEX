@@ -61,7 +61,7 @@
 					stroke-linecap="square" stroke-miterlimit="10" xmlns:xlink="http://www.w3.org/1999/xlink"
 					xmlns="http://www.w3.org/2000/svg">
 					<clipPath id="p.0">
-						<path class=" revealOnScroll " data-animation="stoke-animate"
+						<path 
 							d="m0 0l364.66928 0l0 214.49081l-364.66928 0l0 -214.49081z" clip-rule="nonzero" />
 					</clipPath>
 					<g clip-path="url(#p.0)">
@@ -69,16 +69,16 @@
 							fill-rule="evenodd" />
 						<path fill="#000000" fill-opacity="0.0" d="m7.6036744 7.5643044l350.23624 1.5118113"
 							fill-rule="evenodd" />
-						<path stroke="#ffffff" stroke-width="2.0" stroke-linejoin="round" stroke-linecap="butt"
+						<path class="revealOnScroll" data-animation="stroke-animate-top-1"  stroke="#ffffff" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="butt"
 							d="m7.6036744 7.5643044l350.23624 1.5118113" fill-rule="evenodd" />
 						<path fill="#000000" fill-opacity="0.0" d="m357.8399 9.076116l0.7558899 195.74803"
 							fill-rule="evenodd" />
-						<path stroke="#ffffff" stroke-width="2.0" stroke-linejoin="round" stroke-linecap="butt"
+						<path  class="revealOnScroll" data-animation="stroke-animate-top-2"  stroke="#ffffff" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="butt"
 							d="m357.8399 9.076116l0.7558899 195.74803" fill-rule="evenodd" />
-						<path fill="#ffffff"
+						<path  class="revealOnScroll" data-animation="stroke-animate-top-2"  fill="#ffffff"
 							d="m354.84778 208.13124l0 0c0 -1.8264618 1.5088196 -3.3070984 3.3700562 -3.3070984l0 0c0.8937988 0 1.7510071 0.34843445 2.3830261 0.9686279c0.63201904 0.6201935 0.98706055 1.4613647 0.98706055 2.3384705l0 0c0 1.8264465 -1.5088196 3.3070831 -3.3700867 3.3070831l0 0c-1.8612366 0 -3.3700562 -1.4806366 -3.3700562 -3.3070831z"
 							fill-rule="evenodd" />
-						<path stroke="#ffffff" stroke-width="2.0" stroke-linejoin="round" stroke-linecap="butt"
+						<path  class="revealOnScroll" data-animation="stroke-animate-top-3"  stroke="#ffffff" stroke-width="3.0" stroke-linejoin="round" stroke-linecap="butt"
 							d="m354.84778 208.13124l0 0c0 -1.8264618 1.5088196 -3.3070984 3.3700562 -3.3070984l0 0c0.8937988 0 1.7510071 0.34843445 2.3830261 0.9686279c0.63201904 0.6201935 0.98706055 1.4613647 0.98706055 2.3384705l0 0c0 1.8264465 -1.5088196 3.3070831 -3.3700867 3.3070831l0 0c-1.8612366 0 -3.3700562 -1.4806366 -3.3700562 -3.3070831z"
 							fill-rule="evenodd" />
 					</g>
@@ -437,7 +437,7 @@
 					offsetTop = $this.offset().top;
 				if (scrolled + win_height_padded < offsetTop) {
 					$(this).removeClass(
-						"animated box-expand"
+						"animated box-expand stroke-animate"
 					);
 				}
 			});
