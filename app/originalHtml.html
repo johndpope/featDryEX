@@ -15,6 +15,7 @@
 		</div>
 		<div class="exFunctions">
 			<img src="https://uniqlo.scene7.com/is/image/UNIQLO/dryex_function?$jpgMQ$" alt="" />
+			<h2>The Technology</h2>
 			<div class="exFunctRow">
 				<div class="exOneFunct">
 					<h3>Wicks Sweat</h3>
@@ -442,5 +443,18 @@
 		}
 		revealOnScroll();
 	});
+
+
+	// heights of main product image background glows
+	window.onload = function(){
+		var mainImgHeight = $('.exDeetsMain').height()
+		mainImgHeight = mainImgHeight - 100
+		console.log('mainImgHeight: ' + mainImgHeight)
+
+		var lastImgHeight = $('.exDeetsMain:last-of-type').height()
+		console.log('lastImgHeight: ' + lastImgHeight)
+
+		$('head').append('<style>.exDeets:before{height:' + mainImgHeight + 'px !important;}</style>');
+	}
 
 </script>
