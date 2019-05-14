@@ -66,14 +66,21 @@ sans-serif;
       display: flex;
       justify-content: space-around;
       position: absolute;
-      bottom: 0;
+      bottom: 10%;
       h3 {
-        font-size: 20px;
+        padding-bottom: 5px;
+        font-size: 35px;
         text-transform: uppercase;
       }
       p {
         font-family: $fontFam_hel;
+        font-weight: 300;
+        line-height: 1.6;
       }
+    }
+    .exOneFunct {
+      padding: 0 4%;
+      // border: 1px solid red;
     }
     .exCollect {
       margin-bottom: 200px;
@@ -104,6 +111,7 @@ sans-serif;
         justify-content: space-between;
         flex-wrap: wrap;
         position: relative;
+        // padding-top: 50px;
       }
       img.exDeetsMain {
         position: absolute;
@@ -133,7 +141,7 @@ sans-serif;
           display: flex;
           flex-direction: column;
           align-items: center;
-          width: 50%;
+          width: 40%;
           text-align: center;
           // border: 1px solid blue;
           &:nth-child(odd) {
@@ -145,6 +153,7 @@ sans-serif;
           width: 100%;
           border: 3px solid white;
           border-radius: 50%;
+          filter: grayscale(100%);
         }
 
         p {
