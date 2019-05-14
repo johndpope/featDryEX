@@ -148,19 +148,25 @@ sans-serif;
 
 			}
 		}
-  }
-  .img-animate{
-    animation: img-expand .8s forwards;
-  }
-  @keyframes img-expand {
-    0%{
-      transform: translateX(-100%)
-    }
-    100%{
-      transform: translateX(0%)
-    }
-    
-  }
+	}
+
+	.img-animate {
+		@include bp(mid) {
+			animation: img-expand .8s forwards;
+		}
+	}
+
+	@keyframes img-expand {
+		0% {
+			transform: translateX(-100%)
+		}
+
+		100% {
+			transform: translateX(0%)
+		}
+
+	}
+
 	.exCollect {
 		margin-bottom: 200px;
 
@@ -169,9 +175,10 @@ sans-serif;
 			margin-bottom: 300px;
 
 			@include bp(mid) {
-        img{
-          transform: translateX(-100%)
-        }
+				img {
+					transform: translateX(-100%)
+				}
+
 				margin-bottom: 180px;
 				display: flex;
 				justify-content: center;
@@ -244,33 +251,56 @@ sans-serif;
 		}
 
 		.exOneDeet-top-left svg {
-			position: absolute;
-			z-index: -1;
-			width: 25%;
-			top: 40px;
-			left: 180px;
-    }
-    .exOneDeet-top-right svg{
-      position: absolute;
-      width: 25%;
-      z-index: -1;
-      top: 20px;
-      right: 250px;
-    }
-    .exOneDeet-bottom-left svg {
-      width: 25%;
-      position: absolute;
-      left: 210px;
-      bottom: 100px;
-      z-index: -1;
-    }
-    .exOneDeet-bottom-right svg{
-      position: absolute;
-      width: 25%;
-      z-index: -1;
-      right: 220px;
-      bottom: 70px;
-    }
+			display: none;
+
+			@include bp(mid) {
+				display: block;
+				position: absolute;
+				z-index: -1;
+				width: 25%;
+				top: 40px;
+				left: 180px;
+			}
+		}
+
+		.exOneDeet-top-right svg {
+			display: none;
+
+			@include bp(mid) {
+				display: block;
+				position: absolute;
+				width: 25%;
+				z-index: -1;
+				top: 20px;
+				right: 250px;
+			}
+		}
+
+		.exOneDeet-bottom-left svg {
+			display: none;
+
+			@include bp(mid) {
+				display: block;
+				width: 25%;
+				position: absolute;
+				left: 210px;
+				bottom: 100px;
+				z-index: -1;
+			}
+		}
+
+		.exOneDeet-bottom-right svg {
+			display: none;
+
+			@include bp(mid) {
+				display: block;
+				position: absolute;
+				width: 25%;
+				z-index: -1;
+				right: 220px;
+				bottom: 70px;
+			}
+		}
 
 		.exOneDeet {
 			display: flex;
@@ -286,19 +316,23 @@ sans-serif;
 				padding-left: 0;
 				padding-right: 5%;
 			}
-      &.exOneDeet-top-left,
-      &.exOneDeet-top-right {
+
+			&.exOneDeet-top-left,
+			&.exOneDeet-top-right {
 				margin-top: -215px;
+
 				@include bp(sm) {
 					margin-top: -180px;
 				}
+
 				@include bp(mid) {
 					margin-top: -50px;
 
 				}
 			}
-      &.exOneDeet-bottom-left,
-      &.exOneDeet-bottom-right {
+
+			&.exOneDeet-bottom-left,
+			&.exOneDeet-bottom-right {
 				margin-top: 75%;
 
 				@include bp(mid) {
@@ -306,6 +340,7 @@ sans-serif;
 
 				}
 			}
+
 			.exAlignDeet {
 				display: flex;
 				flex-direction: column;
@@ -364,32 +399,34 @@ sans-serif;
 
 .animated.stroke-animate-top-1 {
 	stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation-direction: reverse;
-  animation: preStroke .8s linear  forwards, currentStroke .8s linear forwards .4s;
+	stroke-dashoffset: 1000;
+	animation-direction: reverse;
+	animation: preStroke .8s linear forwards, currentStroke .8s linear forwards .4s;
 }
+
 .animated.stroke-animate-top-2 {
 	stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation-direction: reverse;
-  animation: preStroke .4s linear forwards .25s, currentStroke .8s linear forwards .6s;
+	stroke-dashoffset: 1000;
+	animation-direction: reverse;
+	animation: preStroke .4s linear forwards .25s, currentStroke .8s linear forwards .6s;
 }
+
 .animated.stroke-animate-top-3 {
 	stroke-dasharray: 1000;
-  stroke-dashoffset: 1000;
-  animation-direction: reverse;
-  animation: preStroke .5s linear forwards .4s, currentStroke .5s linear forwards 1.2s;
+	stroke-dashoffset: 1000;
+	animation-direction: reverse;
+	animation: preStroke .5s linear forwards .4s, currentStroke .5s linear forwards 1.2s;
 }
 
 @keyframes preStroke {
 	to {
 		stroke: #fff;
-    stroke-dashoffset: 0;
+		stroke-dashoffset: 0;
 	}
 
 	// to {
 	// 	stroke: #f6ff00;
-  //   stroke-dashoffset: 1000;
+	//   stroke-dashoffset: 1000;
 	// }
 }
 
@@ -402,8 +439,8 @@ sans-serif;
 // 	to {
 //     stroke: #fff;
 //     stroke-dashoffset: 0;
-    
-    
+
+
 // 	}
 // }
 
