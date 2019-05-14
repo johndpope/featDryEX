@@ -229,12 +229,19 @@ sans-serif;
 			}
 		}
 
-		.exOneDeet-top:nth-child(2) svg {
+		.exOneDeet-top-left svg {
 			position: absolute;
 			z-index: -1;
 			width: 25%;
 			top: 40px;
 			left: 180px;
+    }
+    .exOneDeet-bottom-left svg {
+      width: 25%;
+      position: absolute;
+      left: 210px;
+      bottom: 100px;
+      z-index: -1;
 		}
 
 		.exOneDeet {
@@ -251,24 +258,18 @@ sans-serif;
 				padding-left: 0;
 				padding-right: 5%;
 			}
-
 			&.exOneDeet-top {
 				margin-top: -215px;
-
 				@include bp(sm) {
 					margin-top: -180px;
-
 				}
-
 				@include bp(mid) {
 					margin-top: -50px;
 
 				}
 			}
-
-
-
-			&.exOneDeet-bottom {
+      &.exOneDeet-bottom-left,
+      &.exOneDeet-bottom-right {
 				margin-top: 75%;
 
 				@include bp(mid) {
@@ -276,7 +277,6 @@ sans-serif;
 
 				}
 			}
-
 			.exAlignDeet {
 				display: flex;
 				flex-direction: column;
@@ -347,47 +347,42 @@ sans-serif;
 	stroke-dashoffset: 1000;
   animation: preStroke .8s linear forwards, currentStroke .8s linear forwards .4s;
 }
-// .animated.stroke-animate-top-2 {
-// 	stroke-dasharray: 1000;
-// 	stroke-dashoffset: 1000;
-//   animation: preStroke .4s linear forwards .3s, currentStroke .8s linear forwards .8s;
-// }
-// .animated.stroke-animate-top-3 {
-// 	stroke-dasharray: 1000;
-// 	stroke-dashoffset: 1000;
-//   animation: preStroke .5s linear forwards .2s, currentStroke .5s linear forwards 1.2s;
-// }
+.animated.stroke-animate-top-2 {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+  animation: preStroke .4s linear forwards .25s, currentStroke .8s linear forwards .6s;
+}
+.animated.stroke-animate-top-3 {
+	stroke-dasharray: 1000;
+	stroke-dashoffset: 1000;
+  animation: preStroke .5s linear forwards .2s, currentStroke .5s linear forwards 1.2s;
+}
 
 @keyframes preStroke {
 	from {
 		stroke: #f6ff00;
     stroke-dashoffset: 1000;
-    opacity: 1;
 	}
 
 	to {
 		stroke: #f6ff00;
     stroke-dashoffset: 0;
-    opacity: 0;
 	}
 }
 
-@keyframes currentStroke {
-	from {
-    stroke: #fff;
-    	// 	stroke: #f6ff00;
-    stroke-dashoffset: 1000;
-    opacity: 0;
-	}
+// @keyframes currentStroke {
+// 	from {
+//     stroke: #fff;
+//     stroke-dashoffset: 1000;
+// 	}
 
-	to {
-    stroke: #fff;
-    stroke-dashoffset: 0;
-    opacity: 1;
+// 	to {
+//     stroke: #fff;
+//     stroke-dashoffset: 0;
     
     
-	}
-}
+// 	}
+// }
 
 // }
 
