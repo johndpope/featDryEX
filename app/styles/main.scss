@@ -238,8 +238,10 @@ sans-serif;
 
 		.exDeets {
 			position: relative;
+			padding-bottom: 50px;
 
 			@include bp(mid){
+				padding: 0;
 				display: flex;
 				justify-content: space-between;
 				flex-wrap: wrap;
@@ -247,38 +249,17 @@ sans-serif;
             &::before {
                 content: "";
                 position: absolute;
-<<<<<<< HEAD
-                top: 45%;
-=======
                 top: 28%;
->>>>>>> master
                 left: 50%;
                 transform: translate(-50%, -50%);
                 // min-width: 200px;
                 border-radius: 50%;
-<<<<<<< HEAD
-                box-shadow: 0 0 150px 30px #f6ff01;
-=======
                 box-shadow: 0 0 250px 50px #f6ff01;
->>>>>>> master
                 // background-color: #f6ff01;
                 background-color: rgba(184, 193, 29, .5);
                 padding: 12px;
                 color: green;
                 font-size: 14px;
-<<<<<<< HEAD
-                z-index: 1;
-                width: 15%;
-				height: 66%;
-				@include bp(mid){
-					top: 37%;
-					left: 50%;
-					width: 20%;
-					height: 50%;
-
-				}
-				
-=======
 				z-index: 1;
 				width: 15%;
                 height: 15%;
@@ -291,7 +272,6 @@ sans-serif;
 			
 				
                 // height: 66%;
->>>>>>> master
             }
 		}
 
@@ -301,7 +281,7 @@ sans-serif;
 			margin: auto;
 			position: relative;
 			z-index: 2;
-			margin-bottom: 200px;
+			// margin-bottom: 200px;
 
 
 			@include bp(mid) {
@@ -325,21 +305,37 @@ sans-serif;
             z-index: -1;
         }
 
-		.exOneDeet-top-left svg {
-			display: none;
+		.exOneDeet-top-left {
+			.deet-mb{
+					z-index: 3;
+					top: 60px;
+					left: 140px;
+				}
 
-			@include bp(mid) {
-				display: block;
-				position: absolute;
-				z-index: -1;
-				width: 25%;
-				top: 40px;
-				left: 180px;
+
+			svg {
+				display: none;
+
+				@include bp(mid) {
+					display: block;
+					position: absolute;
+					z-index: -1;
+					width: 25%;
+					top: 40px;
+					left: 180px;
 				
 			}
 		}
+		}
 
-		.exOneDeet-top-right svg {
+		.exOneDeet-top-right{
+
+			.deet-mb{
+				z-index: 3;
+				top: 60px;
+				right: 140px;
+			}
+			 svg {
 			display: none;
 
 			@include bp(mid) {
@@ -351,8 +347,15 @@ sans-serif;
 				right: 250px;
 			}
 		}
+		}
 
-		.exOneDeet-bottom-left svg {
+		.exOneDeet-bottom-left {
+			.deet-mb{
+				z-index: 3;
+				bottom: 60px;
+				left: 140px;
+			}
+		svg {
 			display: none;
 
 			@include bp(mid) {
@@ -364,8 +367,15 @@ sans-serif;
 				z-index: -1;
 			}
 		}
+		}
 
-		.exOneDeet-bottom-right svg {
+		.exOneDeet-bottom-right {
+			.deet-mb{
+				z-index: 3;
+				bottom: 60px;
+				right: 140px;
+			}
+			svg {
 			display: none;
 
 			@include bp(mid) {
@@ -376,6 +386,7 @@ sans-serif;
 				right: 180px;
 				bottom: 180px;
 			}
+		}
 		}
 
 		.exOneDeet {
@@ -438,32 +449,26 @@ sans-serif;
 
 				// border: 1px solid blue;
 				&:nth-child(odd) {}
-			}
-
-			img.exDeetImg {
-			
 				display: none;
 				
 				@include bp(mid){
 
 					display: block;
+				}
+			}
+
+			img.exDeetImg {
+			
+			
 					width: 100%;
 					border: 3px solid white;
 					border-radius: 50%;
 					filter: grayscale(100%);
 					box-shadow: 0 0 10px 2px #f6ff01;
-				}
 		
 
 			}
-			.deet-mb{
-				width: 25px;
-				height: 25px;
-				border-radius: 50%;
-				background-color: #fff;
-				position: absolute;
-
-			}
+	
 
 
 			.exDeetCpy {
@@ -508,6 +513,15 @@ sans-serif;
 	}
 }
 
+
+.deet-mb{
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background-color: #fff;
+	position: absolute;
+
+}
 .animated.stroke-animate-top-1 {
 	stroke-dasharray: 1000;
 	stroke-dashoffset: 1000;
