@@ -113,20 +113,22 @@ sans-serif;
 	.exFunctRow {
 		@include bp(sm) {
 			display: flex;
-			justify-content: space-around;
-			position: absolute;
-			bottom: 0;
+            justify-content: center;
+            position: absolute;
+            bottom: 10%;
+            width: 100%;
 		}
 
 
 		h3 {
 			font-size: 18px;
 			text-transform: uppercase;
-			color: #f6ff00;
+            color: #f6ff00;
+            padding-bottom: 5px;
 
 
 			@include bp(sm) {
-				font-size: 20px;
+                font-size: 35px;
 
 			}
 		}
@@ -134,7 +136,9 @@ sans-serif;
 		p {
 			font-family: $fontFam_hel;
 			font-size: 14px;
-			color: #f6ff00;
+            color: #f6ff00;
+            font-weight: 300;
+            line-height: 1.6;
 
 		}
 
@@ -144,7 +148,8 @@ sans-serif;
 
 			@include bp(sm) {
 				margin: 0;
-				padding: 0;
+                padding: 0;
+                width: 20%;
 
 			}
 		}
@@ -170,7 +175,6 @@ sans-serif;
 	.exCollect {
 		margin-bottom: 200px;
 
-		// padding: 0 15px;
 		.exColHeader {
 			margin-bottom: 300px;
 
@@ -198,7 +202,6 @@ sans-serif;
 			@include bp(mid) {
 				padding: 30px 80px 60px;
 				transform: translateX(110%);
-
 				width: 39%;
 				margin-left: -60px;
 			}
@@ -233,7 +236,25 @@ sans-serif;
 			display: flex;
 			justify-content: space-between;
 			flex-wrap: wrap;
-			position: relative;
+            position: relative;
+            &::before {
+                content: "";
+                position: absolute;
+                top: 37%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                min-width: 200px;
+                border-radius: 50%;
+                box-shadow: 0 0 70px 30px #f6ff01;
+                // background-color: #f6ff01;
+                background-color: rgba(184, 193, 29, 1);
+                padding: 12px;
+                color: green;
+                font-size: 14px;
+                z-index: 1;
+                width: 20%;
+                // height: 66%;
+            }
 		}
 
 		img.exDeetsMain {
@@ -248,7 +269,17 @@ sans-serif;
 			@include bp(mid) {
 				width: 50%;
 			}
-		}
+        }
+        .exDeetsGlow {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70%;
+            height: 50%;
+            border-radius: 100px / 50px;
+            box-shadow: 0 0 10px 2px #f6ff01;
+            // z-index: -1;
+        }
 
 		.exOneDeet-top-left svg {
 			display: none;
@@ -356,7 +387,9 @@ sans-serif;
 			img.exDeetImg {
 				width: 100%;
 				border: 3px solid white;
-				border-radius: 50%;
+                border-radius: 50%;
+                filter: grayscale(100%);
+                box-shadow: 0 0 10px 2px #f6ff01;
 
 			}
 
