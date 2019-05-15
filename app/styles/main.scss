@@ -30,7 +30,9 @@ sans-serif;
 	* {
 		box-sizing: border-box;
 	}
-
+	.hide{
+		display:none;
+	}
 	img {
 		display: block;
 		width: 100%;
@@ -401,13 +403,14 @@ sans-serif;
 		}
 
 		.exCtas {
+			
 			display: flex;
 			justify-content: center;
 			margin-top: 80px;
 		}
 
 		.exOneCta {
-			margin: 0 10px;
+			margin: 0 auto;
 			padding: 10px 15px;
 			font-size: 16px;
 			color: black;
@@ -415,13 +418,14 @@ sans-serif;
 			text-align: center;
 			background: #f6ff00;
 			border: 1px solid black;
-			width: 45%;
+			width: 80%;
 			cursor: pointer;
 
 			@include bp(mid) {
 				padding: 15px 20px;
 				font-size: 18px;
-				width: 18%;
+				width: 300px;
+				margin: auto;
 
 			}
 		}
