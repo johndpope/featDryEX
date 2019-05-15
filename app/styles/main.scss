@@ -20,7 +20,7 @@ sans-serif;
 
 // FULL WIDTH SPECIFICITY
 // 
-.pt_primary #main .primary-content {
+// .pt_primary #main .primary-content {
 	#exFeat {
 		padding-bottom: 1px;
 		color: #f6ff00;
@@ -114,15 +114,21 @@ sans-serif;
 		.exFunctions {
 			position: relative;
 			text-align: center;
+			img{
+				min-height: 450px;
+			}
 		}
 
 		.exFunctRow {
+			position: absolute;
+			bottom: 0;
+			width: 100%;
 			@include bp(sm) {
+			bottom: 50%;
+
 				display: flex;
 				justify-content: center;
-				position: absolute;
-				bottom: 10%;
-				width: 100%;
+			
 			}
 
 
@@ -803,4 +809,4 @@ sans-serif;
 			}
 		
 		}
-}
+// }
