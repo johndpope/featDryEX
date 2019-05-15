@@ -649,7 +649,7 @@ sans-serif;
 		.modalCustom-bg {
 			width: 100%;
 			height: 100%;
-			background-color: rgba(235, 235, 235, 0.8);
+			background-color: rgba(0, 0, 0, 0.5);
 		}
 		
 		.modalCustom-inner {
@@ -657,7 +657,7 @@ sans-serif;
 			top: 50%;
 			left: 50%;
 			width: 80%;
-			height: 60%;
+			height: 30%;
 			max-width: 700px;
 			max-height: 700px;
 			margin: 15px;
@@ -719,7 +719,7 @@ sans-serif;
 		
 		.modalCustom-inner .banner-text {
 			font-size: 24px;
-			text-align: left;
+			text-align: center;
 			text-decoration: none;
 			font-family: 'Helvetica Neue', Helvetica, Arial;
 		
