@@ -178,9 +178,11 @@ sans-serif;
 		margin-bottom: 200px;
 
 		.exColHeader {
-			margin-bottom: 300px;
+			margin-bottom: 150px;
 
 			@include bp(mid) {
+			margin-bottom: 300px;
+
 				img {
 					transform: translateX(-100%)
 				}
@@ -235,40 +237,57 @@ sans-serif;
 		}
 
 		.exDeets {
-			display: flex;
-			justify-content: space-between;
-			flex-wrap: wrap;
-            position: relative;
+			position: relative;
+
+			@include bp(mid){
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
             &::before {
                 content: "";
                 position: absolute;
-                top: 37%;
+                top: 45%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 min-width: 200px;
                 border-radius: 50%;
-                box-shadow: 0 0 70px 30px #f6ff01;
+                box-shadow: 0 0 150px 30px #f6ff01;
                 // background-color: #f6ff01;
-                background-color: rgba(184, 193, 29, 1);
+                background-color: rgba(184, 193, 29, .5);
                 padding: 12px;
                 color: green;
                 font-size: 14px;
                 z-index: 1;
-                width: 20%;
-                // height: 66%;
+                width: 15%;
+				height: 66%;
+				@include bp(mid){
+					top: 37%;
+					left: 50%;
+					width: 20%;
+					height: 50%;
+
+				}
+				
             }
 		}
 
 		img.exDeetsMain {
-			position: absolute;
-			left: 50%;
-			transform: translateX(-50%);
-			z-index: 1;
-			// display: none;
-			max-width: 680px;
-			width: 75%;
+		
+			width: 80%;
+			margin: auto;
+			position: relative;
+			z-index: 2;
+			margin-bottom: 200px;
+
 
 			@include bp(mid) {
+				margin: 0;
+				position: absolute;
+				left: 50%;
+				transform: translateX(-50%);
+				// display: none;
+				max-width: 680px;
 				width: 60%;
 			}
         }
@@ -280,7 +299,7 @@ sans-serif;
             height: 50%;
             border-radius: 100px / 50px;
             box-shadow: 0 0 10px 2px #f6ff01;
-            // z-index: -1;
+            z-index: -1;
         }
 
 		.exOneDeet-top-left svg {
@@ -337,6 +356,7 @@ sans-serif;
 		}
 
 		.exOneDeet {
+			@include bp(mid){
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
@@ -344,6 +364,7 @@ sans-serif;
 			padding-left: 5%;
 			z-index: 2;
 			// border: 1px solid yellow;
+			}
 
 			&:hover .exAlignDeet img{
 				filter: none ;
@@ -360,7 +381,7 @@ sans-serif;
 
 			&.exOneDeet-top-left,
 			&.exOneDeet-top-right {
-				margin-top: -215px;
+				// margin-top: -215px;
 
 				@include bp(sm) {
 					margin-top: -180px;
@@ -374,7 +395,7 @@ sans-serif;
 
 			&.exOneDeet-bottom-left,
 			&.exOneDeet-bottom-right {
-				margin-top: 75%;
+				// margin-top: 75%;
 
 				@include bp(mid) {
 					margin-top: 22%;
@@ -397,17 +418,36 @@ sans-serif;
 			}
 
 			img.exDeetImg {
-				width: 100%;
-				border: 3px solid white;
-                border-radius: 50%;
-                filter: grayscale(100%);
-				box-shadow: 0 0 10px 2px #f6ff01;
+			
+				display: none;
+				
+				@include bp(mid){
+
+					display: block;
+					width: 100%;
+					border: 3px solid white;
+					border-radius: 50%;
+					filter: grayscale(100%);
+					box-shadow: 0 0 10px 2px #f6ff01;
+				}
 		
+
+			}
+			.deet-mb{
+				width: 25px;
+				height: 25px;
+				border-radius: 50%;
+				background-color: #fff;
+				position: absolute;
 
 			}
 
 
-			p {
+			.exDeetCpy {
+				display: none;
+				@include bp(mid){
+					display: block;
+				}
 				font-family: $fontFam_hel;
 				color: white;
 				margin-top: 20px;
@@ -424,14 +464,14 @@ sans-serif;
 
 		.exOneCta {
 			margin: 0 auto;
-			padding: 10px 15px;
-			font-size: 16px;
+			padding: 25px 30px;
+			font-size: 18px;
 			color: black;
 			text-transform: uppercase;
 			text-align: center;
 			background: #f6ff00;
 			border: 1px solid black;
-			width: 80%;
+			width: 100%;
 			cursor: pointer;
 
 			@include bp(mid) {
