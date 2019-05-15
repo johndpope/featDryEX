@@ -247,17 +247,26 @@ sans-serif;
             &::before {
                 content: "";
                 position: absolute;
+<<<<<<< HEAD
                 top: 45%;
+=======
+                top: 28%;
+>>>>>>> master
                 left: 50%;
                 transform: translate(-50%, -50%);
-                min-width: 200px;
+                // min-width: 200px;
                 border-radius: 50%;
+<<<<<<< HEAD
                 box-shadow: 0 0 150px 30px #f6ff01;
+=======
+                box-shadow: 0 0 250px 50px #f6ff01;
+>>>>>>> master
                 // background-color: #f6ff01;
                 background-color: rgba(184, 193, 29, .5);
                 padding: 12px;
                 color: green;
                 font-size: 14px;
+<<<<<<< HEAD
                 z-index: 1;
                 width: 15%;
 				height: 66%;
@@ -269,6 +278,20 @@ sans-serif;
 
 				}
 				
+=======
+				z-index: 1;
+				width: 15%;
+                height: 15%;
+				@include bp(sm){
+					top: 37%;
+					left: 50%;
+					width: 25%;
+					height: 25%;
+				}
+			
+				
+                // height: 66%;
+>>>>>>> master
             }
 		}
 
